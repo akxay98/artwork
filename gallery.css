@@ -1,0 +1,308 @@
+@media screen and (max-width: 640px){
+    *
+    {
+        margin: 0;
+        font-size: 14px;
+        font-family: 'Montserrat', Courier, monospace;
+        color: black;
+        scroll-behavior: smooth;
+    }
+    .content
+    {
+        padding-bottom: 2rem;
+    }
+    .content .top
+    {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+    .content .top h1
+    {
+        letter-spacing: 0.1rem !important;
+    }
+    .content .row .col-md
+    {
+        padding-bottom: 3rem !important;
+    }
+    .content .row
+    {
+        padding-top: 0rem !important;
+        padding-bottom: 0rem !important;
+    }
+    .content .contact form
+    {
+        width: 100% !important;
+    }
+    .footer .copyright
+    {
+        text-align: center !important;
+    }
+    .footer .myname
+    {
+        text-align: center !important;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1007px){
+    *
+    {
+        margin: 0;
+        font-size: 14px;
+        font-family: 'Montserrat', Courier, monospace;
+        color: black;
+        scroll-behavior: smooth;
+    }
+    .content .col-md .image
+    {
+        width: 90% !important;
+    }
+    .content .contact form
+    {
+        width: 60% !important;
+    }
+}
+
+@media screen and (min-width: 1008px) and (max-width: 1920px){
+    *
+    {
+        margin: 0;
+        font-size: 14px;
+        font-family: 'Montserrat', Courier, monospace;
+        color: black;
+        scroll-behavior: smooth;
+    } 
+}
+
+@media screen and (min-width: 1921px){
+    *
+    {
+        margin: 0;
+        font-size: 16px;
+        font-family: 'Montserrat', Courier, monospace;
+        color: black;
+        scroll-behavior: smooth;
+    } 
+}
+
+body
+{
+    background: linear-gradient(to right, #89ABE3, #cfddf3);
+}
+
+/* ----------HEADER SECTION----------- */
+
+.header
+{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.header h1
+{
+    font-weight: 800;
+    background: linear-gradient(to right, #2c003f, #8500bd);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+}
+
+/* ----------CONTENT SECTION----------- */
+
+.content
+{
+    text-align: center;
+}
+.content .row
+{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+.content .top h1
+{
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.content .top h1:hover
+{
+    transform: translateY(-1rem);
+}
+.content .top .intro
+{
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.content .top .links
+{
+    text-align: center;
+    padding-top: 1rem;
+}
+.content .top a
+{
+    text-decoration: none;
+    color: #7600a8;
+    font-weight: 600;
+}
+.content .col-md
+{
+    text-align: center;
+    border-radius: 4rem 1rem;
+    filter: drop-shadow(0.5rem 0.5rem 0.7rem black);
+}
+.content .col-md .image
+{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 4rem 1rem;
+    height: fit-content;
+    text-align: center;
+    overflow: hidden;
+}
+.content .gradient
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, black, transparent);
+    border-radius: 4rem 1rem;
+    display: none;
+    z-index: 2;
+}
+.content img
+{
+    border-radius: 4rem 1rem;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    transition: transform 0.6s;
+}
+.content .image:hover > .gradient
+{
+    display: block;
+}
+.content .image:hover > img
+{
+    transform: scale(1.2);
+}
+.content .typo
+{
+    color: white;
+    position: absolute;
+    bottom: 4%;
+    width: 100%;
+    text-align: center;
+    opacity: 1 !important;
+}
+.content .typo h4
+{
+    color: white;
+    font-weight: 700 !important;
+}
+.content .typo i
+{
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+.content .typo .fa-heart:hover
+{
+    color: red;
+}
+.content .typo .fa-comment:hover
+{
+    color: lightgreen;
+}
+.content .typo .fa-paper-plane:hover
+{
+    color: blueviolet;
+}
+.content .typo button
+{
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+.content .typo button:hover
+{
+    width: 10rem;
+}
+.content .contact
+{
+    padding-bottom: 4rem;
+}
+.content .contact h1
+{
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    font-weight: 800;
+    letter-spacing: 0.5rem;
+    filter: drop-shadow(0 0.3rem 0.4rem black);
+}
+.content .contact form
+{
+    position: relative;
+    margin: 0 auto;
+    width: 50%;
+}
+.content .contact input, .content .contact textarea
+{
+    background-color: 	#7393B3;
+    border-radius: 1rem;
+    border: none;
+    font-weight: 700;
+}
+.content .contact label
+{
+    font-weight: 700;
+    opacity: 0.7;
+}
+.content .contact #message
+{
+    height: 18rem;
+    resize: none;
+}
+.content .contact button
+{
+    position: relative;
+    top: 2rem;
+    font-weight: 700;
+    width: 13rem;
+    text-align: center;
+    height: 3.5rem;
+    border-radius: 1rem;
+    background-color: red;
+    color: white;
+    letter-spacing: 0.1rem;
+    transition: all 0.4s;
+}
+.content .contact button:hover
+{
+    box-shadow: 0 0 0.5rem black;
+    transform: translate(0.3rem, 0.3rem);
+}
+.content .contact i
+{
+    color: white;
+}
+
+/* ----------FOOTER SECTION----------- */
+
+.footer
+{
+    padding-bottom: 1rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+.footer .myname
+{
+    text-align: right;
+}
