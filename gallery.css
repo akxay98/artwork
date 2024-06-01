@@ -122,11 +122,6 @@ body
     font-weight: 800;
     letter-spacing: 0.3rem;
     display: inline-block;
-    transition: all 0.3s;
-}
-.content .top h1:hover
-{
-    transform: translateY(-1rem);
 }
 .content .top .intro
 {
