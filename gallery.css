@@ -28,7 +28,7 @@
     {
         padding-top: 12rem !important;
     }
-    .content .row .col-md
+    .content .row .col-lg
     {
         padding-bottom: 3rem !important;
     }
@@ -64,9 +64,18 @@
     {
         background-image: url(./backimage-vertical.jpg) !important;
     }
-    .content .col-md .image
+    .content .row .col-lg
     {
-        width: 90% !important;
+        padding-bottom: 6rem !important;
+    }
+    .content .row
+    {
+        padding-top: 0rem !important;
+        padding-bottom: 0rem !important;
+    }
+    .content .col-lg .image
+    {
+        width: 80% !important;
     }
     .content .contact form
     {
@@ -118,9 +127,9 @@ body
 
 .backimage
 {
-    min-height: 54rem;
+    /* min-height: 100vh; */
     max-height: fit-content;
-    overflow: hidden;
+    overflow-x: hidden;
     background-image: url(./backimage1.jpg);
     background-size: cover;
     filter: drop-shadow(0rem 1rem 1.5rem black);
@@ -153,16 +162,16 @@ body
     padding-bottom: 3rem;
     text-align: center;
 }
-.blur
+.blur1
 {
     backdrop-filter: blur(0.3rem) saturate(80%) brightness(30%);
-    height: 54rem;
+    min-height: 100vh !important;
     max-height: fit-content;
 }
 .content .top
 {
-    position: relative;
-    top: 10rem;
+    padding-top: 20vh;
+    padding-bottom: 12rem;
 }
 .content .top h1
 {
@@ -202,10 +211,15 @@ body
 }
 .content .top .scroll
 {
-    padding-top: 17rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
     letter-spacing: 0.05rem;
     font-size: 1.1rem;
     color: white;
+    font-weight: 600;
 }
 .content .picture
 {
@@ -219,13 +233,13 @@ body
     letter-spacing: 0.5rem;
     filter: drop-shadow(0 0.3rem 0.4rem black);
 }
-.content .col-md
+.content .col-lg
 {
     text-align: center;
     border-radius: 4rem 1rem;
     filter: drop-shadow(0.5rem 0.5rem 0.7rem black);
 }
-.content .col-md .image
+.content .col-lg .image
 {
     position: relative;
     margin: 0 auto;
