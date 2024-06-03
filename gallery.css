@@ -7,9 +7,13 @@
         color: black;
         scroll-behavior: smooth;
     }
+    .backimage
+    {
+        background-image: url(./backimage-vertical.jpg) !important;
+    } 
     .content
     {
-        padding-bottom: 2rem;
+        padding-bottom: 2rem !important;
     }
     .content .top
     {
@@ -19,6 +23,10 @@
     .content .top h1
     {
         letter-spacing: 0.1rem !important;
+    }
+    .content .top .scroll
+    {
+        padding-top: 12rem !important;
     }
     .content .row .col-md
     {
@@ -52,6 +60,10 @@
         color: black;
         scroll-behavior: smooth;
     }
+    .backimage
+    {
+        background-image: url(./backimage-vertical.jpg) !important;
+    }
     .content .col-md .image
     {
         width: 90% !important;
@@ -62,11 +74,26 @@
     }
 }
 
-@media screen and (min-width: 1008px) and (max-width: 1920px){
+@media screen and (min-width: 1008px) and (max-width: 1024px){
     *
     {
         margin: 0;
         font-size: 14px;
+        font-family: 'Montserrat', Courier, monospace;
+        color: black;
+        scroll-behavior: smooth;
+    }
+    .backimage
+    {
+        background-image: url(./backimage-vertical.jpg) !important;
+    } 
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1920px){
+    *
+    {
+        margin: 0;
+        font-size: 16px;
         font-family: 'Montserrat', Courier, monospace;
         color: black;
         scroll-behavior: smooth;
@@ -77,7 +104,7 @@
     *
     {
         margin: 0;
-        font-size: 16px;
+        font-size: 20px;
         font-family: 'Montserrat', Courier, monospace;
         color: black;
         scroll-behavior: smooth;
@@ -89,6 +116,15 @@ body
     background: linear-gradient(to right, #89ABE3, #cfddf3);
 }
 
+.backimage
+{
+    min-height: 54rem;
+    max-height: fit-content;
+    overflow: hidden;
+    background-image: url(./backimage1.jpg);
+    background-size: cover;
+    filter: drop-shadow(0rem 1rem 1.5rem black);
+} 
 /* ----------HEADER SECTION----------- */
 
 .header
@@ -99,9 +135,9 @@ body
 .header h1
 {
     font-weight: 800;
-    background: linear-gradient(to right, #2c003f, #8500bd);
-    background-clip: text;
     display: inline;
+    background-image: linear-gradient(to right, #a94cd0, #e6ccf1);
+    background-clip: text;
     color: transparent;
 }
 
@@ -117,17 +153,36 @@ body
     padding-bottom: 3rem;
     text-align: center;
 }
+.blur
+{
+    backdrop-filter: blur(0.7rem) saturate(80%) brightness(40%);
+    height: 54rem;
+    max-height: fit-content;
+}
+.content .top
+{
+    position: relative;
+    top: 10rem;
+}
 .content .top h1
 {
     font-weight: 800;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
     display: inline-block;
+    color: white;
 }
 .content .top .intro
 {
     padding-top: 1rem;
     font-size: 1.1rem;
     font-weight: 500;
+    color: white;
+    letter-spacing: 0.05rem;
+}
+.content .top i
+{
+    color: white;
+    font-weight: 900;
 }
 .content .top .links
 {
@@ -137,8 +192,32 @@ body
 .content .top a
 {
     text-decoration: none;
-    color: #7600a8;
     font-weight: 600;
+    color: #a94cd0;
+}
+.content .top .scroll i
+{
+    color: white;
+    animation: bounce 1.3s ease 0s infinite;
+}
+.content .top .scroll
+{
+    padding-top: 17rem;
+    letter-spacing: 0.05rem;
+    font-size: 1.1rem;
+    color: white;
+}
+.content .picture
+{
+    padding-top: 6rem;
+}
+.content .picture h1
+{
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    font-weight: 800;
+    letter-spacing: 0.5rem;
+    filter: drop-shadow(0 0.3rem 0.4rem black);
 }
 .content .col-md
 {
@@ -186,6 +265,7 @@ body
 }
 .content .typo
 {
+    padding: 1rem;
     color: white;
     position: absolute;
     bottom: 4%;
@@ -232,7 +312,7 @@ body
 }
 .content .contact
 {
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 }
 .content .contact h1
 {
@@ -258,7 +338,7 @@ body
 .content .contact label
 {
     font-weight: 700;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 .content .contact #message
 {
@@ -300,4 +380,19 @@ body
 .footer .myname
 {
     text-align: right;
+}
+
+/* ----------ANIMATION SECTION----------- */
+
+@keyframes bounce{
+    0%{
+        transform: translateY(-1rem);
+    }
+    50%
+    {
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-1rem);
+    }
 }
