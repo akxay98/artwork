@@ -164,7 +164,7 @@ body
 }
 .blur1
 {
-    backdrop-filter: blur(0.3rem) saturate(80%) brightness(30%);
+    backdrop-filter: blur(0.3rem) saturate(110%) brightness(30%);
     min-height: 100vh !important;
     max-height: fit-content;
 }
