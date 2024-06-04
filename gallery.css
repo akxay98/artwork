@@ -257,9 +257,6 @@ body
     margin: 0 auto;
     width: 80%;
     border-radius: 4rem 1rem;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     text-align: center;
     overflow: hidden;
 }
